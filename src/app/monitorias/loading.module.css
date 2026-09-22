@@ -1,0 +1,38 @@
+.main {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 56px 32px;
+}
+
+.title,
+.filters,
+.agenda {
+  animation: pulse 1.4s ease-in-out infinite;
+  background: #e7eaf0;
+}
+
+.title {
+  height: 72px;
+  margin-bottom: 32px;
+  max-width: 560px;
+}
+
+.filters {
+  height: 240px;
+  margin-bottom: 32px;
+}
+
+.agenda {
+  height: 540px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

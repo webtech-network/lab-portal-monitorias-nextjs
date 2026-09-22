@@ -1,0 +1,37 @@
+.main {
+  align-items: center;
+  color: var(--color-muted);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 720px;
+  min-height: calc(100vh - 72px);
+  padding: 96px 32px;
+  text-align: center;
+}
+
+.main h1 {
+  color: var(--color-text);
+  font-size: 1.45rem;
+  margin: 18px 0 8px;
+}
+
+.main p {
+  font-size: 0.9rem;
+  margin: 0 0 24px;
+}
+
+.main button {
+  align-items: center;
+  background: var(--color-primary);
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 650;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 18px;
+}

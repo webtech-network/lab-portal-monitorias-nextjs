@@ -1,0 +1,41 @@
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 72px);
+  padding: 96px 24px;
+  text-align: center;
+}
+
+.main svg,
+.main span {
+  color: var(--color-primary);
+}
+
+.main span {
+  font-size: 0.72rem;
+  font-weight: 750;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.main h1 {
+  font-size: 1.7rem;
+  font-weight: 580;
+  margin: 8px 0;
+}
+
+.main p {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  margin: 0 0 24px;
+}
+
+.main a {
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 650;
+  padding: 12px 18px;
+  text-decoration: none;
+}

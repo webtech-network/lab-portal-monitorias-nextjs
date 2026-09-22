@@ -1,0 +1,164 @@
+.form {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.headingIcon {
+  align-items: center;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  display: inline-flex;
+  height: 38px;
+  justify-content: center;
+  width: 38px;
+}
+
+.heading h2 {
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 0;
+}
+
+.heading p {
+  color: var(--color-muted);
+  font-size: 0.82rem;
+  margin: 3px 0 0;
+}
+
+.searchRow {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 112px;
+}
+
+.searchField {
+  align-items: center;
+  border: 1px solid var(--color-border-strong);
+  display: flex;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 14px;
+}
+
+.searchField:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus);
+}
+
+.searchField svg {
+  color: var(--color-muted);
+  flex: 0 0 auto;
+}
+
+.searchField input {
+  background: transparent;
+  border: 0;
+  color: var(--color-text);
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+.searchButton,
+.applyButton {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 650;
+}
+
+.searchButton:hover,
+.applyButton:hover {
+  background: var(--color-primary-dark);
+}
+
+.filters {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.filters label {
+  display: grid;
+  gap: 7px;
+}
+
+.filters span {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.filters select {
+  background: #ffffff;
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.82rem;
+  min-height: 42px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.actions {
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+}
+
+.clearButton {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--color-danger);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 600;
+  gap: 6px;
+  padding: 8px 0;
+}
+
+.applyButton {
+  min-height: 38px;
+  padding: 0 18px;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .searchRow,
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .searchButton {
+    min-height: 44px;
+  }
+
+  .actions span {
+    display: none;
+  }
+}

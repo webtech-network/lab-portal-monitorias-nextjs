@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #3451c6;
+  --color-primary-dark: #263d9e;
+  --color-primary-soft: #e8edff;
+  --color-text: #172034;
+  --color-muted: #637083;
+  --color-border: #e2e6ed;
+  --color-border-strong: #cbd2dd;
+  --color-surface: #f5f7fa;
+  --color-surface-muted: #f8f9fb;
+  --color-danger: #b43a48;
+  --color-focus: rgba(52, 81, 198, 0.2);
+  --shadow-sm: 0 8px 24px rgba(23, 32, 52, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-surface);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  letter-spacing: 0;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
